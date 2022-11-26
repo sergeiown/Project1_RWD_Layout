@@ -1,0 +1,43 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 6rem 0 0 0;
+  background-image: url("../img/hero-first.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 60%;
+
+  &-information {
+    max-width: 40.625rem;
+    h1 {
+      @extend %title-hero;
+    }
+    p {
+      @extend %text;
+      display: block;
+      max-width: 23.125rem;
+      margin: 4rem 0 3rem 0;
+    }
+  }
+  &-blue {
+    @extend %button;
+    transition: all 0.1s ease-out;
+    width: 13.125rem;
+    height: 3.75rem;
+    background: #9c69e2;
+    border: 1px solid #9c69e2;
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    border-radius: 3.125rem;
+    &:hover {
+      background: #8a40ee;
+      border: 1px solid #8a40ee;
+    }
+  }
+}

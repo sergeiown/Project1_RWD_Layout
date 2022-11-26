@@ -68,7 +68,7 @@ ul li {
   color: #4b5d68;
 }
 
-.contacts .footer-button .learn {
+.contacts .footer-button .learn, .hero-blue {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -87,6 +87,15 @@ ul li {
   color: #212353;
 }
 
+.hero-information h1 {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 110%;
+  color: #212353;
+}
+
 .contacts .title h2 {
   font-family: "Work Sans", sans-serif;
   font-style: normal;
@@ -96,7 +105,7 @@ ul li {
   color: #212353;
 }
 
-.contacts .title {
+.contacts .title, .hero-information p {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -243,6 +252,60 @@ body {
   fill: #9c69e2;
 }
 
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 6rem 0 0 0;
+  background-image: url("../img/hero-first.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 60%;
+}
+.hero-information {
+  max-width: 40.625rem;
+}
+.hero-information p {
+  display: block;
+  max-width: 23.125rem;
+  margin: 4rem 0 3rem 0;
+}
+.hero-blue {
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+  width: 13.125rem;
+  height: 3.75rem;
+  background: #9c69e2;
+  border: 1px solid #9c69e2;
+  -webkit-box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+          box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+  border-radius: 3.125rem;
+}
+.hero-blue:hover {
+  background: #8a40ee;
+  border: 1px solid #8a40ee;
+}
+
 .contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -327,6 +390,9 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   margin: 0 0 5rem 0;
+}
+.contacts .footer-contacts a:hover {
+  color: #8a40ee;
 }
 .contacts .footer-contacts .contacts-text {
   margin: 0.5rem 0;
@@ -461,7 +527,7 @@ body {
   margin: 0 0 5rem 0;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 868px) {
   html {
     font-size: 75%;
   }
@@ -508,6 +574,16 @@ body {
   .hamburger.active .logo-item:nth-child(2) {
     display: block;
     fill: #9c69e2;
+  }
+}
+@media only screen and (max-width: 660px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media only screen and (max-width: 560px) {
+  html {
+    font-size: 56.25%;
   }
 }
 /*# sourceMappingURL=index.css.map */

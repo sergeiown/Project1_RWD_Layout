@@ -51,6 +51,10 @@
     align-items: flex-start;
     margin: 0 0 5rem 0;
 
+    a:hover {
+      color: #8a40ee;
+    }
+
     .contacts-text {
       @extend %contacts;
       margin: 0.5rem 0;

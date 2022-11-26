@@ -1,4 +1,4 @@
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 868px) {
   html {
     font-size: 75%;
   }
@@ -43,5 +43,17 @@
       display: block;
       fill: #9c69e2;
     }
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  html {
+    font-size: 56.25%;
   }
 }
