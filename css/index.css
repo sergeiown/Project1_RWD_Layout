@@ -44,7 +44,6 @@ a,
 a:visited,
 a:hover {
   text-decoration: none;
-  color: #4b5d68;
 }
 
 ul li {
@@ -203,6 +202,7 @@ body {
 }
 .nav-menu .nav-item {
   margin: 0 1rem;
+  color: #4b5d68;
 }
 .nav-menu .nav-item .nav-link:hover {
   color: #8a40ee;
@@ -462,6 +462,7 @@ body {
 }
 .contacts .footer-about ul li {
   margin: 1rem 0;
+  color: #4b5d68;
 }
 .contacts .footer-about ul li :hover {
   color: #8a40ee;
@@ -487,6 +488,7 @@ body {
 }
 .contacts .footer-help ul li {
   margin: 1rem 0;
+  color: #4b5d68;
 }
 .contacts .footer-help ul li :hover {
   color: #8a40ee;
