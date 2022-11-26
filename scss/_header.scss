@@ -13,7 +13,6 @@
 }
 
 .nav-menu {
-  @extend %nav-item;
   display: flex;
   flex-grow: 1;
   margin: 0 0 0 6rem;
@@ -21,6 +20,7 @@
   align-items: center;
 
   .nav-item {
+    @extend %nav-item;
     margin: 0 1rem;
 
     .nav-link {

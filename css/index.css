@@ -59,7 +59,7 @@ ul li {
   color: #212353;
 }
 
-.contacts .footer-help ul li, .contacts .footer-about ul li, .nav-menu {
+.contacts .footer-help ul li, .contacts .footer-about ul li, .nav-menu .nav-item {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -321,8 +321,8 @@ body {
   background-color: #fde8f5;
   background-image: url("../img/hero-second.png");
   background-repeat: no-repeat;
-  background-position: 9% center;
-  background-size: 30%;
+  background-position: 8% center;
+  background-size: 28%;
   border-radius: 3.125rem;
 }
 .about-information {
@@ -605,7 +605,6 @@ body {
   }
   .about {
     background-position: 2% center;
-    background-size: 30%;
   }
 }
 @media only screen and (max-width: 660px) {
