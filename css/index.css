@@ -50,7 +50,7 @@ ul li {
   list-style: none;
 }
 
-.contacts .footer-about h3 {
+.contacts .footer-social h3, .contacts .footer-help h3, .contacts .footer-about h3 {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -59,13 +59,22 @@ ul li {
   color: #212353;
 }
 
-.nav-menu {
+.contacts .footer-help ul li, .contacts .footer-about ul li, .nav-menu {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1rem;
   line-height: 160%;
   color: #4b5d68;
+}
+
+.contacts .footer-button .learn {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 160%;
+  color: #ffffff;
 }
 
 .request {
@@ -75,6 +84,63 @@ ul li {
   font-size: 1rem;
   line-height: 160%;
   letter-spacing: 0.005em;
+  color: #212353;
+}
+
+.contacts .title h2 {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 130%;
+  color: #212353;
+}
+
+.contacts .title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 160%;
+  color: #4b5d68;
+}
+
+.contacts .footer-contacts .contacts-logo {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 160%;
+  color: #212353;
+}
+
+.contacts .footer-contacts {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 180%;
+  letter-spacing: 0.01em;
+  color: #212353;
+}
+
+.contacts .footer-contacts .contacts-text {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 180%;
+  letter-spacing: 0.01em;
+  color: #212353;
+}
+
+.contacts .footer-copyright {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 0.75rem;
+  line-height: 180%;
+  letter-spacing: 0.01em;
   color: #212353;
 }
 
@@ -341,6 +407,51 @@ body {
 }
 .contacts .footer-social h3 {
   margin: 0 0 2rem 0;
+}
+.contacts .footer-social .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contacts .footer-social .socials li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 3.125rem;
+  height: 3.125rem;
+  margin: 0 0.5rem 0 0;
+  border: 1px solid #e9e9ee;
+  background-color: #e9e9ee;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+.contacts .footer-social .socials li svg {
+  fill: #fff;
+}
+.contacts .footer-social .socials li:hover {
+  border: 1px solid #00acee;
+  background-color: transparent;
+}
+.contacts .footer-social .socials li:hover svg {
+  fill: #00acee;
 }
 .contacts .footer-copyright {
   -webkit-box-flex: 0;
