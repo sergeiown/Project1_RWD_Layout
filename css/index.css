@@ -371,8 +371,25 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+  position: relative;
+}
+.features-data img {
+  position: absolute;
+  top: 30%;
+  left: 2%;
+  width: 40%;
 }
 .features-data-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   max-width: 25rem;
   padding: 3.875rem 4.375rem 3.875rem 6.25rem;
   border-radius: 3.125rem;
@@ -388,8 +405,25 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+  position: relative;
+}
+.features-access img {
+  position: absolute;
+  top: 30%;
+  left: 2%;
+  width: 40%;
 }
 .features-access-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   max-width: 25rem;
   height: 25rem;
   padding: 3.875rem 4.375rem 3.875rem 6.25rem;
@@ -406,8 +440,25 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+  position: relative;
+}
+.features-print img {
+  position: absolute;
+  top: 30%;
+  left: 2%;
+  width: 40%;
 }
 .features-print-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   max-width: 25rem;
   height: 25rem;
   padding: 3.875rem 4.375rem 3.875rem 6.25rem;
@@ -424,8 +475,25 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+  position: relative;
+}
+.features-security img {
+  position: absolute;
+  top: 30%;
+  left: 2%;
+  width: 40%;
 }
 .features-security-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   max-width: 25rem;
   height: 25rem;
   padding: 3.875rem 4.375rem 3.875rem 6.25rem;

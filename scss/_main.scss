@@ -86,8 +86,19 @@
     flex: 0 1 50%;
     display: flex;
     justify-content: end;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 30%;
+      left: 2%;
+      width: 40%;
+    }
 
     &-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
       max-width: 25rem;
       padding: 3.875rem 4.375rem 3.875rem 6.25rem;
       border-radius: 3.125rem;
@@ -99,8 +110,19 @@
     flex: 0 1 50%;
     display: flex;
     justify-content: end;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 30%;
+      left: 2%;
+      width: 40%;
+    }
 
     &-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
       max-width: 25rem;
       height: 25rem;
       padding: 3.875rem 4.375rem 3.875rem 6.25rem;
@@ -113,8 +135,19 @@
     flex: 0 1 50%;
     display: flex;
     justify-content: end;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 30%;
+      left: 2%;
+      width: 40%;
+    }
 
     &-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
       max-width: 25rem;
       height: 25rem;
       padding: 3.875rem 4.375rem 3.875rem 6.25rem;
@@ -127,8 +160,19 @@
     flex: 0 1 50%;
     display: flex;
     justify-content: end;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 30%;
+      left: 2%;
+      width: 40%;
+    }
 
     &-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
       max-width: 25rem;
       height: 25rem;
       padding: 3.875rem 4.375rem 3.875rem 6.25rem;
