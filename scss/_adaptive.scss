@@ -1,3 +1,42 @@
-html {
-  //   font-size: 75%;
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 75%;
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: rgba(240, 99, 184, 0.95);
+    width: 96%;
+    margin: 1rem 1rem;
+    border-radius: 0.625rem;
+    text-align: center;
+    transition: all 0.2s ease-out;
+    overflow: auto;
+  }
+
+  .nav-menu.active {
+    left: 0;
+
+    .nav-item {
+      margin: 5rem 0;
+      font-size: 200%;
+    }
+  }
+
+  .hamburger {
+    display: flex;
+    flex-grow: 1;
+    justify-content: end;
+    margin: 0 1rem;
+
+    &.active .logo-item:nth-child(1) {
+      display: none;
+    }
+    &.active .logo-item:nth-child(2) {
+      display: block;
+      fill: #9c69e2;
+    }
+  }
 }
