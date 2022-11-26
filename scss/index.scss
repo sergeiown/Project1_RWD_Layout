@@ -1,0 +1,15 @@
+@import "../scss/reset";
+@import "../scss/fonts";
+
+body {
+  scroll-behavior: smooth;
+  user-select: none;
+  max-width: 1170px;
+  width: 99%;
+  margin: 0 auto;
+}
+
+@import "../scss/header";
+@import "../scss/main";
+@import "../scss/footer";
+@import "../scss/adaptive";
