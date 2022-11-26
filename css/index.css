@@ -88,6 +88,22 @@ ul li {
   color: #212353;
 }
 
+.features .learn-more {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 160%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.005em;
+  color: #212353;
+}
+
 .hero-information h1 {
   font-family: "Work Sans", sans-serif;
   font-style: normal;
@@ -97,7 +113,7 @@ ul li {
   color: #212353;
 }
 
-.contacts .title h2, .about-information h2 {
+.contacts .title h2, .features-title h2, .about-information h2 {
   font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -106,11 +122,29 @@ ul li {
   color: #212353;
 }
 
-.contacts .title, .about-information p, .hero-information p {
+.features-security-text h3, .features-print-text h3, .features-access-text h3, .features-data-text h3 {
+  font-family: "Work Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 130%;
+  color: #212353;
+}
+
+.contacts .title, .features-title p, .about-information p, .hero-information p {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 1.125rem;
+  line-height: 160%;
+  color: #4b5d68;
+}
+
+.features-security-text p, .features-print-text p, .features-access-text p, .features-data-text p {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
   line-height: 160%;
   color: #4b5d68;
 }
@@ -169,6 +203,7 @@ body {
   position: sticky;
   top: 0;
   background-color: #fff;
+  z-index: 2;
 }
 
 .navbar {
@@ -245,9 +280,6 @@ body {
 }
 .request:hover svg {
   fill: #fff;
-}
-.request div {
-  margin: 0 0 0 1rem;
 }
 .request svg {
   margin: 0 1rem 0 0;
@@ -342,6 +374,22 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 6rem 0 0 0;
+}
+.features .learn-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 13.125rem;
+  height: 3.75rem;
+  border: none;
+}
+.features .learn-more svg {
+  margin: 0 0 0 1rem;
+  fill: #9c69e2;
 }
 .features-title {
   -webkit-box-flex: 0;
@@ -360,6 +408,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 0 5rem 0;
+}
+.features-title h2 {
+  margin: 0 0 3.125rem 0;
+}
+.features-title p {
+  text-align: center;
 }
 .features-data {
   -webkit-box-flex: 0;
@@ -372,11 +427,12 @@ body {
       -ms-flex-pack: end;
           justify-content: end;
   position: relative;
+  padding: 0 0.9rem 3.125rem 0;
 }
 .features-data img {
   position: absolute;
-  top: 30%;
-  left: 2%;
+  top: 25%;
+  left: 1%;
   width: 40%;
 }
 .features-data-text {
@@ -391,9 +447,17 @@ body {
       -ms-flex-pack: left;
           justify-content: left;
   max-width: 25rem;
+  height: 25rem;
   padding: 3.875rem 4.375rem 3.875rem 6.25rem;
   border-radius: 3.125rem;
   background-color: #f0faf9;
+  background-image: url("../img/features1.svg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: 80% 10%;
+}
+.features-data-text p {
+  margin: auto 0;
 }
 .features-access {
   -webkit-box-flex: 0;
@@ -406,11 +470,12 @@ body {
       -ms-flex-pack: end;
           justify-content: end;
   position: relative;
+  padding: 0 0 3.125rem 0.9rem;
 }
 .features-access img {
   position: absolute;
-  top: 30%;
-  left: 2%;
+  top: 25%;
+  left: 1%;
   width: 40%;
 }
 .features-access-text {
@@ -429,6 +494,13 @@ body {
   padding: 3.875rem 4.375rem 3.875rem 6.25rem;
   border-radius: 3.125rem;
   background-color: #f0faf9;
+  background-image: url("../img/features2.svg");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: 90% 90%;
+}
+.features-access-text p {
+  margin: auto 0;
 }
 .features-print {
   -webkit-box-flex: 0;
@@ -441,11 +513,12 @@ body {
       -ms-flex-pack: end;
           justify-content: end;
   position: relative;
+  padding: 0 0.9rem 3.125rem 0;
 }
 .features-print img {
   position: absolute;
-  top: 30%;
-  left: 2%;
+  top: 25%;
+  left: 1%;
   width: 40%;
 }
 .features-print-text {
@@ -464,6 +537,13 @@ body {
   padding: 3.875rem 4.375rem 3.875rem 6.25rem;
   border-radius: 3.125rem;
   background-color: #f0faf9;
+  background-image: url("../img/features3.svg");
+  background-repeat: no-repeat;
+  background-size: 15%;
+  background-position: 90% 10%;
+}
+.features-print-text p {
+  margin: auto 0;
 }
 .features-security {
   -webkit-box-flex: 0;
@@ -476,11 +556,12 @@ body {
       -ms-flex-pack: end;
           justify-content: end;
   position: relative;
+  padding: 0 0 3.125rem 0.9rem;
 }
 .features-security img {
   position: absolute;
-  top: 30%;
-  left: 2%;
+  top: 25%;
+  left: 1%;
   width: 40%;
 }
 .features-security-text {
@@ -499,6 +580,22 @@ body {
   padding: 3.875rem 4.375rem 3.875rem 6.25rem;
   border-radius: 3.125rem;
   background-color: #f0faf9;
+  background-image: url("../img/features4.svg"), url("../img/features5.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 60%, 15%;
+  background-position: 10% 10%, 90% 90%;
+}
+.features-security-text p {
+  margin: auto 0;
+}
+
+.testimonials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 6rem 0 0 0;
 }
 
 .contacts {
@@ -722,7 +819,7 @@ body {
   margin: 0 0 5rem 0;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1080px) {
   html {
     font-size: 75%;
   }
@@ -774,14 +871,20 @@ body {
     background-position: 2% center;
   }
 }
-@media only screen and (max-width: 660px) {
+@media only screen and (max-width: 840px) {
   html {
     font-size: 62.5%;
   }
 }
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 700px) {
   html {
     font-size: 56.25%;
+  }
+  .features img {
+    position: absolute;
+    top: 30%;
+    left: 1%;
+    width: 25%;
   }
 }
 /*# sourceMappingURL=index.css.map */
