@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Work+Sans:wght@400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -49,6 +50,25 @@ ul li {
   list-style: none;
 }
 
+.nav-menu {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #4b5d68;
+}
+
+.request {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 160%;
+  letter-spacing: 0.005em;
+  color: #212353;
+}
+
 body {
   scroll-behavior: smooth;
   -webkit-user-select: none;
@@ -58,5 +78,93 @@ body {
   max-width: 1170px;
   width: 99%;
   margin: 0 auto;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: 1rem 0;
+}
+
+.nav-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 0 0 0 6rem;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav-menu .nav-item {
+  margin: 0 1rem;
+}
+.nav-menu .nav-item .nav-link:hover {
+  color: #8a40ee;
+}
+
+.hamburger {
+  border: none;
+  background-color: transparent;
+  display: none;
+}
+.hamburger .logo-item:nth-child(1) {
+  fill: #f063b8;
+}
+.hamburger .logo-item:nth-child(2) {
+  display: none;
+}
+
+.request {
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 13.125rem;
+  height: 3.75rem;
+  border: 1px solid #9c69e2;
+  -webkit-box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+          box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+  border-radius: 3.125rem;
+}
+.request:hover {
+  background-color: #9c69e2;
+  color: #fff;
+}
+.request:hover svg {
+  fill: #fff;
+}
+.request div {
+  margin: 0 0 0 1rem;
+}
+.request svg {
+  margin: 0 1rem 0 0;
+  fill: #9c69e2;
 }
 /*# sourceMappingURL=index.css.map */
