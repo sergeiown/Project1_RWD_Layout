@@ -96,7 +96,7 @@ ul li {
   color: #212353;
 }
 
-.contacts .title h2 {
+.contacts .title h2, .about-information h2 {
   font-family: "Work Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -105,7 +105,7 @@ ul li {
   color: #212353;
 }
 
-.contacts .title, .hero-information p {
+.contacts .title, .about-information p, .hero-information p {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -277,6 +277,7 @@ body {
       -ms-flex-align: start;
           align-items: flex-start;
   margin: 6rem 0 0 0;
+  padding: 0 0 2.188rem 0;
   background-image: url("../img/hero-first.png");
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -304,6 +305,33 @@ body {
 .hero-blue:hover {
   background: #8a40ee;
   border: 1px solid #8a40ee;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 6rem 0 0 0;
+  background-color: #fde8f5;
+  background-image: url("../img/hero-second.png");
+  background-repeat: no-repeat;
+  background-position: 9% center;
+  background-size: 30%;
+  border-radius: 3.125rem;
+}
+.about-information {
+  max-width: 31.25rem;
+  margin: 6.875rem 4.375rem;
+}
+.about-information p {
+  display: block;
+  margin: 2.5rem 0 0 0;
 }
 
 .contacts {
@@ -527,7 +555,7 @@ body {
   margin: 0 0 5rem 0;
 }
 
-@media only screen and (max-width: 868px) {
+@media only screen and (max-width: 900px) {
   html {
     font-size: 75%;
   }
@@ -574,6 +602,10 @@ body {
   .hamburger.active .logo-item:nth-child(2) {
     display: block;
     fill: #9c69e2;
+  }
+  .about {
+    background-position: 2% center;
+    background-size: 30%;
   }
 }
 @media only screen and (max-width: 660px) {

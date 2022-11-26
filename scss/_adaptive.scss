@@ -1,4 +1,4 @@
-@media only screen and (max-width: 868px) {
+@media only screen and (max-width: 900px) {
   html {
     font-size: 75%;
   }
@@ -43,6 +43,11 @@
       display: block;
       fill: #9c69e2;
     }
+  }
+
+  .about {
+    background-position: 2% center; //for ".about"
+    background-size: 30%;
   }
 }
 

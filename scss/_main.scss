@@ -9,6 +9,7 @@
   justify-content: space-between;
   align-items: flex-start;
   margin: 6rem 0 0 0;
+  padding: 0 0 2.188rem 0; //to move down background
   background-image: url("../img/hero-first.png");
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -38,6 +39,33 @@
     &:hover {
       background: #8a40ee;
       border: 1px solid #8a40ee;
+    }
+  }
+}
+
+.about {
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+  margin: 6rem 0 0 0;
+  background-color: #fde8f5;
+  background-image: url("../img/hero-second.png");
+  background-repeat: no-repeat;
+  background-position: 9% center;
+  background-size: 30%;
+  border-radius: 3.125rem;
+
+  &-information {
+    max-width: 31.25rem;
+    margin: 6.875rem 4.375rem;
+
+    h2 {
+      @extend %title;
+    }
+    p {
+      @extend %text;
+      display: block;
+      margin: 2.5rem 0 0 0;
     }
   }
 }
