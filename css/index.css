@@ -50,6 +50,15 @@ ul li {
   list-style: none;
 }
 
+.contacts .footer-about h3 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 160%;
+  color: #212353;
+}
+
 .nav-menu {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -166,5 +175,177 @@ body {
 .request svg {
   margin: 0 1rem 0 0;
   fill: #9c69e2;
+}
+
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 6rem 0 0 0;
+}
+.contacts .title {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 23.125rem;
+          flex: 0 1 23.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0 0 5rem 0;
+}
+.contacts .title h2 {
+  margin: 0 0 1rem 0;
+}
+.contacts .footer-button {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 28.125rem;
+          flex: 0 1 28.125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 5rem 0;
+}
+.contacts .footer-button .learn {
+  -webkit-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+  width: 13.125rem;
+  height: 3.75rem;
+  background: #f063b8;
+  border: 1px solid #f063b8;
+  -webkit-box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+          box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+  border-radius: 3.125rem;
+}
+.contacts .footer-button .learn:hover {
+  background: #eb4bab;
+  border: 1px solid #eb4bab;
+}
+.contacts .footer-contacts {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25rem;
+          flex: 0 1 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0 0 5rem 0;
+}
+.contacts .footer-contacts .contacts-text {
+  margin: 0.5rem 0;
+}
+.contacts .footer-contacts .contacts-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 4rem 0;
+}
+.contacts .footer-contacts .contacts-logo svg {
+  margin: 0 1rem 0 0;
+}
+.contacts .footer-about {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 20%;
+          flex: 0 1 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0 0 5rem 0;
+}
+.contacts .footer-about h3 {
+  margin: 0 0 2rem 0;
+}
+.contacts .footer-about ul li {
+  margin: 1rem 0;
+}
+.contacts .footer-about ul li :hover {
+  color: #8a40ee;
+}
+.contacts .footer-help {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 20%;
+          flex: 0 1 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 0 0 5rem 0;
+}
+.contacts .footer-help ul li {
+  margin: 1rem 0;
+}
+.contacts .footer-help ul li :hover {
+  color: #8a40ee;
+}
+.contacts .footer-help h3 {
+  margin: 0 0 2rem 0;
+}
+.contacts .footer-social {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 20%;
+          flex: 0 1 20%;
+  margin: 0 0 5rem 0;
+}
+.contacts .footer-social h3 {
+  margin: 0 0 2rem 0;
+}
+.contacts .footer-copyright {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100%;
+          flex: 0 1 100%;
+  margin: 0 0 5rem 0;
 }
 /*# sourceMappingURL=index.css.map */
