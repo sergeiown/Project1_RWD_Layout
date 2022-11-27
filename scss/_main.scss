@@ -1,0 +1,328 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 6rem 0 0 0;
+  padding: 0 0 2.188rem 0; //to move down background
+  background-image: url("../img/hero-first.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 60%;
+
+  &-information {
+    max-width: 40.625rem;
+    h1 {
+      @extend %title-hero;
+    }
+    p {
+      @extend %text;
+      display: block;
+      max-width: 23.125rem;
+      margin: 4rem 0 3rem 0;
+    }
+  }
+  &-blue {
+    @extend %button;
+    transition: all 0.1s ease-out;
+    width: 13.125rem;
+    height: 3.75rem;
+    background: #9c69e2;
+    border: 1px solid #9c69e2;
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    border-radius: 3.125rem;
+    &:hover {
+      background: #8a40ee;
+      border: 1px solid #8a40ee;
+    }
+  }
+}
+
+.about {
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+  margin: 6rem 0 0 0;
+  background-color: #fde8f5;
+  background-image: url("../img/hero-second.png");
+  background-repeat: no-repeat;
+  background-position: 8% center;
+  background-size: 30%;
+  border-radius: 3.125rem;
+
+  &-information {
+    max-width: 31.25rem;
+    margin: 6.875rem 4.375rem;
+
+    h2 {
+      @extend %title;
+    }
+    p {
+      @extend %text;
+      display: block;
+      margin: 2.5rem 0 0 0;
+    }
+  }
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 6rem 0 0 0;
+
+  .learn-more {
+    @extend %button-features;
+    display: flex;
+    align-items: center;
+    width: 13.125rem;
+    height: 3.75rem;
+    border: none;
+
+    svg {
+      margin: 0 0 0 1rem;
+      fill: #9c69e2;
+    }
+  }
+
+  &-title {
+    flex: 0 1 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 5rem 0;
+
+    h2 {
+      @extend %title;
+      margin: 0 0 3.125rem 0;
+    }
+
+    p {
+      @extend %text;
+      text-align: center;
+    }
+  }
+
+  &-data {
+    flex: 0 1 50%;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    padding: 2rem 1rem;
+
+    img {
+      position: absolute;
+      top: 30%;
+      left: 1%;
+      width: 40%;
+    }
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      max-width: 25rem;
+      height: 25rem;
+      padding: 3.875rem 4.375rem 3.875rem 6.25rem;
+      border-radius: 3.125rem;
+      background-color: #f0faf9;
+      background-image: url("../img/features1.svg");
+      background-repeat: no-repeat;
+      background-size: 50%;
+      background-position: 80% 10%;
+
+      h3 {
+        @extend %title-small;
+      }
+
+      p {
+        @extend %text-small;
+        margin: auto 0;
+      }
+    }
+  }
+
+  &-access {
+    flex: 0 1 50%;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    padding: 2rem 1rem;
+
+    img {
+      position: absolute;
+      top: 30%;
+      left: 1%;
+      width: 40%;
+    }
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      max-width: 25rem;
+      height: 25rem;
+      padding: 3.875rem 4.375rem 3.875rem 6.25rem;
+      border-radius: 3.125rem;
+      background-color: #f0faf9;
+      background-image: url("../img/features2.svg");
+      background-repeat: no-repeat;
+      background-size: 50%;
+      background-position: 90% 90%;
+
+      h3 {
+        @extend %title-small;
+      }
+
+      p {
+        @extend %text-small;
+        margin: auto 0;
+      }
+    }
+  }
+
+  &-print {
+    flex: 0 1 50%;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    padding: 2rem 1rem;
+
+    img {
+      position: absolute;
+      top: 30%;
+      left: 1%;
+      width: 40%;
+    }
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      max-width: 25rem;
+      height: 25rem;
+      padding: 3.875rem 4.375rem 3.875rem 6.25rem;
+      border-radius: 3.125rem;
+      background-color: #f0faf9;
+      background-image: url("../img/features3.svg");
+      background-repeat: no-repeat;
+      background-size: 15%;
+      background-position: 95% 5%;
+
+      h3 {
+        @extend %title-small;
+      }
+
+      p {
+        @extend %text-small;
+        margin: auto 0;
+      }
+    }
+  }
+
+  &-security {
+    flex: 0 1 50%;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    padding: 2rem 1rem;
+
+    img {
+      position: absolute;
+      top: 30%;
+      left: 1%;
+      width: 40%;
+    }
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      max-width: 25rem;
+      height: 25rem;
+      padding: 3.875rem 4.375rem 3.875rem 6.25rem;
+      border-radius: 3.125rem;
+      background-color: #f0faf9;
+      background-image: url("../img/features4.svg"), url("../img/features5.svg");
+      background-repeat: no-repeat, no-repeat;
+      background-size: 60%, 15%;
+      background-position: 10% 10%, 95% 95%;
+
+      h3 {
+        @extend %title-small;
+      }
+
+      p {
+        @extend %text-small;
+        margin: auto 0;
+      }
+    }
+  }
+}
+
+.testimonials {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 6rem 0 0 0;
+  background-color: #ccddff;
+  background-image: url("../img/testimonials1.svg"),
+    url("../img/testimonials2.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 45%, 48%;
+  background-position: 1% 1%, 99% 60%;
+  border-radius: 3.125rem;
+
+  h2 {
+    flex: 0 1 100%;
+    @extend %testimonials-title;
+    text-align: center;
+    margin: 5rem 0;
+  }
+
+  div {
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 29rem;
+    padding: 3.125rem 1.5rem 3.125rem 8.438rem;
+    background-color: #ffffff;
+    border: 1px solid #9c69e2;
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    border-radius: 50px;
+    margin: 0 0 5rem 0;
+
+    :first-child {
+      @extend %testimonials-name;
+    }
+
+    :nth-child(2) {
+      @extend %testimonials-ref;
+      margin: 0.5rem 0 1rem 0;
+    }
+
+    :last-child {
+      @extend %text-small;
+    }
+  }
+
+  .john {
+    background-image: url("../img/john-fang.png");
+    background-repeat: no-repeat;
+    background-position: 7% 27%;
+    background-size: 20%;
+  }
+
+  .hanna {
+    background-image: url("../img/hanna-wilson.png");
+    background-repeat: no-repeat;
+    background-position: 7% 27%;
+    background-size: 20%;
+  }
+}
