@@ -7,6 +7,7 @@
     left: -100%;
     top: 5rem;
     flex-direction: column;
+    justify-content: space-around;
     // background-color: rgba(240, 99, 184, 0.95);
     background: linear-gradient(
       0deg,
@@ -25,8 +26,8 @@
     left: 0;
 
     .nav-item {
-      margin: 5rem 0;
-      font-size: 200%;
+      // margin: 5rem 0;
+      font-size: 250%;
     }
   }
 
@@ -89,6 +90,23 @@
         display: block;
         margin: 2.5rem 0 0 6rem;
       }
+    }
+  }
+
+  .contacts {
+    justify-content: center;
+    .title {
+      align-items: center;
+    }
+
+    .footer-social {
+      h3 {
+        text-align: center;
+      }
+    }
+
+    .footer-copyright {
+      text-align: center;
     }
   }
 }

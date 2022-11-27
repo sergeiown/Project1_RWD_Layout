@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/ico" />
     <link rel="stylesheet" href="./css/index.css" />
     <script src="./js/burger.js" defer></script>
+    <script src="./js/button.js" defer></script>
     <title>Data Warehouse</title>
   </head>
   <body>
@@ -18,16 +19,16 @@
         </svg>
         <ul class="nav-menu">
           <li class="nav-item">
-            <a href="#" class="nav-link">About</a>
+            <a href="#about" class="nav-link">About</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Help</a>
+            <a href="#help" class="nav-link">Help</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Features</a>
+            <a href="#features" class="nav-link">Features</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Sign Up</a>
+            <a href="#sign-up" class="nav-link">Sign Up</a>
           </li>
         </ul>
 
@@ -40,7 +41,7 @@
           </svg>
         </button>
 
-        <button class="request">
+        <button class="request" onclick="msg()">
           Request Demo
           <svg width="1.25rem" height="1.25rem">
             <use xlink:href="./img/symbol-defs.svg#icon-arrow-right" />
@@ -52,7 +53,7 @@
 
     <!-- *** main *** -->
     <main class="main">
-      <section class="hero">
+      <section class="hero" id="profile">
         <div class="hero-information">
           <h1>Save your data storage here.</h1>
           <p>
@@ -61,7 +62,7 @@
             of being stolen by others.
           </p>
         </div>
-        <button class="hero-blue">Learn more</button>
+        <button class="hero-blue" onclick="msg()">Learn more</button>
       </section>
 
       <section class="about">
@@ -78,7 +79,7 @@
       </section>
 
       <section class="features">
-        <div class="features-title">
+        <div class="features-title" id="features">
           <h2>Features</h2>
           <p>
             Some of the features and advantages that we provide for those of
@@ -95,7 +96,7 @@
               a search engine, which is useful for making it easier to find data
               effectively saving time.
             </p>
-            <button class="learn-more">
+            <button class="learn-more" onclick="msg()">
               Request Demo
               <svg width="1.25rem" height="1.25rem">
                 <use xlink:href="./img/symbol-defs.svg#icon-arrow-right" />
@@ -112,7 +113,7 @@
               Access is given 24 hours a full morning to night and meet again in
               the morning, giving you comfort when you need data when urgent.
             </p>
-            <button class="learn-more">
+            <button class="learn-more" onclick="msg()">
               Request Demo
               <svg width="1.25rem" height="1.25rem">
                 <use xlink:href="./img/symbol-defs.svg#icon-arrow-right" />
@@ -129,7 +130,7 @@
               Print out service gives you convenience if someday you need print
               data, just edit it all and just print it.
             </p>
-            <button class="learn-more">
+            <button class="learn-more" onclick="msg()">
               Request Demo
               <svg width="1.25rem" height="1.25rem">
                 <use xlink:href="./img/symbol-defs.svg#icon-arrow-right" />
@@ -147,7 +148,7 @@
               to be safer. The file can be secured with a code or password that
               you created, so only you can open the file.
             </p>
-            <button class="learn-more">
+            <button class="learn-more" onclick="msg()">
               Request Demo
               <svg width="1.25rem" height="1.25rem">
                 <use xlink:href="./img/symbol-defs.svg#icon-arrow-right" />
@@ -161,7 +162,11 @@
         <h2>Testimonials</h2>
         <div class="john">
           <p>John Fang</p>
-          <a href="#">wordfaang.com</a>
+          <a
+            href="https://www.investopedia.com/terms/f/faang-stocks.asp"
+            target="_blank"
+            >wordfaang.com</a
+          >
           <p>
             Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra
             enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam
@@ -170,7 +175,11 @@
         </div>
         <div class="hanna">
           <p>Hanna Wilson</p>
-          <a href="#">wordfaang.com</a>
+          <a
+            href="https://www.investopedia.com/terms/f/faang-stocks.asp"
+            target="_blank"
+            >wordfaang.com</a
+          >
           <p>
             Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra
             enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam
@@ -190,8 +199,8 @@
         </div>
 
         <div class="footer-button">
-          <button class="learn">Learn more</button>
-          <button class="request">
+          <button class="learn" onclick="msg()">Learn more</button>
+          <button class="request" onclick="msg()">
             Request Demo
             <svg width="1.25rem" height="1.25rem">
               <use xlink:href="./img/symbol-defs.svg#icon-arrow-right" />
@@ -218,45 +227,45 @@
         </div>
 
         <div class="footer-about">
-          <h3 class="subtitle">About</h3>
+          <h3 class="subtitle" id="about">About</h3>
           <ul>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">DW News</a></li>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about" onclick="msgFooter()">Careers</a></li>
+            <li><a href="#about" onclick="msgFooter()">DW News</a></li>
           </ul>
         </div>
 
         <div class="footer-help">
-          <h3 class="subtitle">Help</h3>
+          <h3 class="subtitle" id="help">Help</h3>
           <ul>
-            <li><a href="#">Support </a></li>
-            <li><a href="#">Sign up</a></li>
-            <li><a href="#">Guide</a></li>
-            <li><a href="#">Reports</a></li>
-            <li><a href="#">Q&A</a></li>
+            <li><a href="#help" onclick="msgFooterHelp()">Support </a></li>
+            <li><a href="#help" onclick="msgFooterHelp()">Sign up</a></li>
+            <li><a href="#help" onclick="msgFooterHelp()">Guide</a></li>
+            <li><a href="#help" onclick="msgFooterHelp()">Reports</a></li>
+            <li><a href="#help" onclick="msgFooterHelp()">Q&A</a></li>
           </ul>
         </div>
 
         <div class="footer-social">
-          <h3 class="subtitle">Social Media</h3>
+          <h3 class="subtitle" id="sign-up">Social Media</h3>
           <ul class="socials">
             <li>
-              <a href="#">
+              <a href="https://www.facebook.com/" target="_blank">
                 <svg width="1.25rem" height="1.25rem">
                   <use xlink:href="./img/symbol-defs.svg#icon-facebook" />
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://twitter.com/i/flow/signup" target="_blank">
                 <svg width="1.25rem" height="1.25rem">
                   <use xlink:href="./img/symbol-defs.svg#icon-twitter" />
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://www.instagram.com/" target="_blank">
                 <svg width="1.25rem" height="1.25rem">
                   <use xlink:href="./img/symbol-defs.svg#icon-instagram" />
                 </svg>
