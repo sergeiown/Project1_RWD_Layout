@@ -1,12 +1,15 @@
 @import "../scss/reset";
 @import "../scss/fonts";
 
-body {
+html {
   scroll-behavior: smooth;
-  user-select: none;
-  max-width: 1170px;
-  width: 96%;
-  margin: 0 auto;
+
+  body {
+    user-select: none;
+    max-width: 1170px;
+    width: 96%;
+    margin: 0 auto;
+  }
 }
 
 @import "../scss/header";
