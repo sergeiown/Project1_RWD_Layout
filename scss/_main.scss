@@ -191,7 +191,7 @@
     display: flex;
     justify-content: end;
     position: relative;
-    padding: 0 0.9rem 3.125rem 0;
+    padding: 0 0.9rem 0 0;
 
     img {
       position: absolute;
@@ -212,7 +212,7 @@
       background-image: url("../img/features3.svg");
       background-repeat: no-repeat;
       background-size: 15%;
-      background-position: 90% 10%;
+      background-position: 95% 5%;
 
       h3 {
         @extend %title-small;
@@ -230,7 +230,7 @@
     display: flex;
     justify-content: end;
     position: relative;
-    padding: 0 0 3.125rem 0.9rem;
+    padding: 0 0 0 0.9rem;
 
     img {
       position: absolute;
@@ -251,7 +251,7 @@
       background-image: url("../img/features4.svg"), url("../img/features5.svg");
       background-repeat: no-repeat, no-repeat;
       background-size: 60%, 15%;
-      background-position: 10% 10%, 90% 90%;
+      background-position: 10% 10%, 95% 95%;
 
       h3 {
         @extend %title-small;
@@ -267,6 +267,62 @@
 
 .testimonials {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
   margin: 6rem 0 0 0;
+  background-color: #ccddff;
+  background-image: url("../img/testimonials1.svg"),
+    url("../img/testimonials2.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 45%, 48%;
+  background-position: 1% 1%, 99% 60%;
+  border-radius: 3.125rem;
+
+  h2 {
+    flex: 0 1 100%;
+    @extend %testimonials-title;
+    text-align: center;
+    margin: 5rem 0;
+  }
+
+  div {
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 29rem;
+    padding: 3.125rem 1.5rem 3.125rem 8.438rem;
+    background-color: #ffffff;
+    border: 1px solid #9c69e2;
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+    border-radius: 50px;
+    margin: 0 0 5rem 0;
+
+    :first-child {
+      @extend %testimonials-name;
+    }
+
+    :nth-child(2) {
+      @extend %testimonials-ref;
+      margin: 0.5rem 0 1rem 0;
+    }
+
+    :last-child {
+      @extend %text-small;
+    }
+  }
+
+  .john {
+    background-image: url("../img/john-fang.png");
+    background-repeat: no-repeat;
+    background-position: 7% 27%;
+    background-size: 20%;
+  }
+
+  .hanna {
+    background-image: url("../img/hanna-wilson.png");
+    background-repeat: no-repeat;
+    background-position: 7% 27%;
+    background-size: 20%;
+  }
 }
