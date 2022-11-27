@@ -62,11 +62,29 @@
   }
 
   .features {
+    justify-content: center;
     img {
       position: absolute;
       top: 33%;
       left: 1%;
       width: 25%;
+    }
+  }
+
+  .testimonials {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .about {
+    &-information {
+      p {
+        @extend %text;
+        display: block;
+        margin: 2.5rem 0 0 6rem;
+      }
     }
   }
 }
