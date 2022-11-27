@@ -30,6 +30,10 @@
     }
   }
 
+  body.overflow-hidden {
+    overflow: hidden;
+  }
+
   .hamburger {
     display: flex;
     flex-grow: 1;
