@@ -1,0 +1,170 @@
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 6rem 0 0 0;
+
+  .title {
+    @extend %text;
+    flex: 0 1 23.125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 0 5rem 0;
+    h2 {
+      @extend %title;
+      margin: 0 0 1rem 0;
+    }
+  }
+
+  .footer-button {
+    flex: 0 1 28.125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 5rem 0;
+    align-items: center;
+    margin: 0 0 5rem 0;
+
+    .learn {
+      @extend %button;
+      transition: all 0.1s ease-out;
+      width: 13.125rem;
+      height: 3.75rem;
+      background: #f063b8;
+      border: 1px solid #f063b8;
+      box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+      border-radius: 3.125rem;
+      &:hover {
+        background: #eb4bab;
+        border: 1px solid #eb4bab;
+      }
+    }
+  }
+
+  .footer-contacts {
+    @extend %contacts-strong;
+    flex: 0 1 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 0 5rem 0;
+
+    a:hover {
+      color: #8a40ee;
+    }
+
+    .contacts-text {
+      @extend %contacts;
+      margin: 0.5rem 0;
+    }
+
+    .contacts-logo {
+      @extend %logo;
+      display: flex;
+      align-items: center;
+      margin: 0 0 4rem 0;
+
+      svg {
+        margin: 0 1rem 0 0;
+      }
+    }
+  }
+
+  .footer-about {
+    flex: 0 1 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 0 5rem 0;
+
+    h3 {
+      @extend %nav-subtitle;
+      margin: 0 0 2rem 0;
+    }
+
+    ul li {
+      @extend %nav-item;
+      margin: 1rem 0;
+
+      :hover {
+        color: #8a40ee;
+      }
+    }
+  }
+
+  .footer-help {
+    flex: 0 1 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 0 5rem 0;
+
+    ul li {
+      @extend %nav-item;
+      margin: 1rem 0;
+
+      :hover {
+        color: #8a40ee;
+      }
+    }
+
+    h3 {
+      @extend %nav-subtitle;
+      margin: 0 0 2rem 0;
+    }
+  }
+
+  .footer-social {
+    flex: 0 1 20%;
+    margin: 0 0 5rem 0;
+
+    h3 {
+      @extend %nav-subtitle;
+      margin: 0 0 2rem 0;
+    }
+
+    .socials {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      & li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.125rem 0 0 0; //for final icons positioning
+        width: 3.125rem;
+        height: 3.125rem;
+        margin: 0 0.5rem 0 0;
+        border: 1px solid #e9e9ee;
+        background-color: #e9e9ee;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: all 0.1s ease-out;
+        svg {
+          fill: #fff;
+        }
+      }
+      & li:hover {
+        border: 1px solid #00acee;
+        background-color: transparent;
+        svg {
+          fill: #00acee;
+        }
+      }
+    }
+  }
+
+  .footer-copyright {
+    @extend %copyright;
+    flex: 0 1 100%;
+    margin: 0 0 5rem 0;
+  }
+}

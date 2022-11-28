@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./img/favicon/site.webmanifest" />
+
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/burger.js" defer></script>
+    <script src="./js/button.js" defer></script>
+    <title>Data Warehouse</title>
+  </head>
+  <body>
+    <!-- *** header *** -->
+    <header class="header">
+      <nav class="navbar">
+        <svg width="2.813rem" height="2.25rem">
+          <use xlink:href="./img/symbol-defs.svg#icon-logo" />
+        </svg>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#help" class="nav-link">Help</a>
+          </li>
+          <li class="nav-item">
+            <a href="#features" class="nav-link">Features</a>
+          </li>
+          <li class="nav-item">
+            <a href="#sign-up" class="nav-link">Sign Up</a>
+          </li>
+        </ul>
+
+        <button class="hamburger">
+          <svg class="logo-item" width="5rem" height="5rem">
+            <use xlink:href="./img/symbol-defs.svg#icon-menu-down" />
+          </svg>
+          <svg class="logo-item" width="5rem" height="5rem">
+            <use xlink:href="./img/symbol-defs.svg#icon-menu-up" />
+          </svg>
+        </button>
+
+        <button class="request" onclick="msg()">
+          Request Demo
+          <svg width="1.25rem" height="1.25rem">
+            <use xlink:href="./img/symbol-defs.svg#icon-arrow-right" />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <!-- *** header *** -->
+
+    <!-- *** main *** -->
+    <main class="main">
+      <section class="hero" id="profile">
+        <div class="hero-information">
+          <h1>Save your data storage here.</h1>
+          <p>
+            Data Warehouse is a data storage area that has been tested for
+            security, so you can store your data here safely but not be afraid
+            of being stolen by others.
+          </p>
+        </div>
+        <button class="hero-blue" onclick="msg()">Learn more</button>
+      </section>
+
+      <section class="about">
+        <div class="about-information">
+          <h2>We are a high-level data storage bank</h2>
+          <p>
+            The place to store various data that you can access at any time
+            through the internet and where you can carry it.<br />This very
+            flexible storage area has a high level of security. To enter into
+            your own data you must enter the password that you created when you
+            registered in this Data Warehouse.
+          </p>
+        </div>
+      </section>
+
+      <section class="features">
+        <div class="features-title" id="features">
+          <h2>Features</h2>
+          <p>
+            Some of the features and advantages that we provide for those of
+            you<br />who store data in this Data Warehouse.
+          </p>
+        </div>
+
+        <div class="features-data">
+          <img src="./img/features1.png" alt="a man with magnifier" />
+          <div class="features-data-text">
+            <h3>Search Data</h3>
+            <p>
+              Don’t worry if your data is very large, the Data Warehoue provides
+              a search engine, which is useful for making it easier to find data
+              effectively saving time.
+            </p>
+            <button class="learn-more" onclick="msg()">
+              Request Demo
+              <svg width="1.25rem" height="1.25rem">
+                <use xlink:href="./img/symbol-defs.svg#icon-arrow-right" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="features-access">
+          <img src="./img/features2.png" alt="a girl with notebook" />
+          <div class="features-access-text">
+            <h3>24 Hours Access</h3>
+            <p>
+              Access is given 24 hours a full morning to night and meet again in
+              the morning, giving you comfort when you need data when urgent.
+            </p>
+            <button class="learn-more" onclick="msg()">
+              Request Demo
+              <svg width="1.25rem" height="1.25rem">
+                <use xlink:href="./img/symbol-defs.svg#icon-arrow-right" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="features-print">
+          <img src="./img/features3.png" alt="printer" />
+          <div class="features-print-text">
+            <h3>Print Out</h3>
+            <p>
+              Print out service gives you convenience if someday you need print
+              data, just edit it all and just print it.
+            </p>
+            <button class="learn-more" onclick="msg()">
+              Request Demo
+              <svg width="1.25rem" height="1.25rem">
+                <use xlink:href="./img/symbol-defs.svg#icon-arrow-right" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="features-security">
+          <img src="./img/features4.png" alt="a girl with a key" />
+          <div class="features-security-text">
+            <h3>Security Code</h3>
+            <p>
+              Data Security is one of our best facilities. Allows for your files
+              to be safer. The file can be secured with a code or password that
+              you created, so only you can open the file.
+            </p>
+            <button class="learn-more" onclick="msg()">
+              Request Demo
+              <svg width="1.25rem" height="1.25rem">
+                <use xlink:href="./img/symbol-defs.svg#icon-arrow-right" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <h2>Testimonials</h2>
+        <div class="john">
+          <p>John Fang</p>
+          <a
+            href="https://www.investopedia.com/terms/f/faang-stocks.asp"
+            target="_blank"
+            >wordfaang.com</a
+          >
+          <p>
+            Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra
+            enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam
+            laoreet nulla.
+          </p>
+        </div>
+        <div class="hanna">
+          <p>Hanna Wilson</p>
+          <a
+            href="https://www.investopedia.com/terms/f/faang-stocks.asp"
+            target="_blank"
+            >wordfaang.com</a
+          >
+          <p>
+            Suspendisse ultrices at diam lectus nullam. Nisl, sagittis viverra
+            enim erat tortor ultricies massa turpis. Arcu pulvinar aenean nam
+            laoreet nulla.
+          </p>
+        </div>
+      </section>
+    </main>
+    <!-- *** main *** -->
+
+    <!-- *** footer *** -->
+    <footer class="footer">
+      <section class="contacts">
+        <div class="title">
+          <h2>Try for free!</h2>
+          <p>Get limited 1 week free try our features!</p>
+        </div>
+
+        <div class="footer-button">
+          <button class="learn" onclick="msg()">Learn more</button>
+          <button class="request" onclick="msg()">
+            Request Demo
+            <svg width="1.25rem" height="1.25rem">
+              <use xlink:href="./img/symbol-defs.svg#icon-arrow-right" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="footer-contacts">
+          <div class="contacts-logo">
+            <svg width="2.813rem" height="2.25rem">
+              <use xlink:href="./img/symbol-defs.svg#icon-logo" />
+            </svg>
+            <p>DataWarehouse</p>
+          </div>
+          <p class="contacts-strong">
+            Warehouse Society, 234<br />Bahagia Ave Street PRBW 2928
+          </p>
+          <a href="mailto:info@warehouse.project" class="contacts-text"
+            >info@warehouse.project</a
+          >
+          <a href="tel:1-232-3434" class="contacts-text"
+            >1-232-3434 &#40;Main&#41;</a
+          >
+        </div>
+
+        <div class="footer-about">
+          <h3 class="subtitle" id="about">About</h3>
+          <ul>
+            <li><a href="#profile">Profile</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about" onclick="msgFooter()">Careers</a></li>
+            <li><a href="#about" onclick="msgFooter()">DW News</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-help">
+          <h3 class="subtitle" id="help">Help</h3>
+          <ul>
+            <li><a href="#help" onclick="msgFooterHelp()">Support </a></li>
+            <li><a href="#help" onclick="msgFooterHelp()">Sign up</a></li>
+            <li><a href="#help" onclick="msgFooterHelp()">Guide</a></li>
+            <li><a href="#help" onclick="msgFooterHelp()">Reports</a></li>
+            <li><a href="#help" onclick="msgFooterHelp()">Q&A</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h3 class="subtitle" id="sign-up">Social Media</h3>
+          <ul class="socials">
+            <li>
+              <a href="https://www.facebook.com/" target="_blank">
+                <svg width="1.25rem" height="1.25rem">
+                  <use xlink:href="./img/symbol-defs.svg#icon-facebook" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/i/flow/signup" target="_blank">
+                <svg width="1.25rem" height="1.25rem">
+                  <use xlink:href="./img/symbol-defs.svg#icon-twitter" />
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank">
+                <svg width="1.25rem" height="1.25rem">
+                  <use xlink:href="./img/symbol-defs.svg#icon-instagram" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-copyright">
+          <p class="copyright-text">
+            © Datawarehouse™, 2020. All rights reserved.
+          </p>
+          <p class="copyright-text">Company Registration Number: 21479524.</p>
+        </div>
+      </section>
+    </footer>
+    <!-- *** footer *** -->
+  </body>
+</html>
