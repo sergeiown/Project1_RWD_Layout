@@ -3,6 +3,4 @@
 
 ### Валідацію HTML на https://validator.w3.org/ пройдено:  ```Document checking completed. No errors or warnings to show. ```
 
-
-
-![screenshot](./img/screenshot.png)
+![image](https://user-images.githubusercontent.com/112722061/222778817-a7ad8da1-c75a-4684-af95-35a302adad8c.png)
